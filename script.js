@@ -161,7 +161,6 @@ function showFieldError(field, shouldShow) {
 }
 
 contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
   const fields = [...contactForm.querySelectorAll("input, textarea")];
   let formIsValid = true;
 
@@ -173,6 +172,7 @@ contactForm?.addEventListener("submit", (event) => {
 
   formStatus.classList.remove("hidden");
   if (!formIsValid) {
+    event.preventDefault();
     formStatus.textContent = "Please review the highlighted fields before sending.";
     formStatus.classList.add("text-red-700");
     fields.find((field) => !field.checkValidity())?.focus();
@@ -180,8 +180,7 @@ contactForm?.addEventListener("submit", (event) => {
   }
 
   formStatus.classList.remove("text-red-700");
-  formStatus.textContent = "Thank you. Your message is ready to send, and this demo form has passed validation.";
-  contactForm.reset();
+  formStatus.textContent = "Sending your message...";
 });
 
 contactForm?.querySelectorAll("input, textarea").forEach((field) => {

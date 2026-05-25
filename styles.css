@@ -164,6 +164,43 @@ img {
   }
 }
 
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-shell {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+  }
+
+  .glass {
+    box-shadow: 0 14px 38px rgba(38, 38, 38, 0.12);
+  }
+
+  .hero-slide,
+  .hero-slide img {
+    min-height: 34rem;
+  }
+
+  h1 {
+    overflow-wrap: anywhere;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  #resumeModal .glass {
+    height: 88vh;
+  }
+
+  #resumeModalFrame {
+    min-height: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
