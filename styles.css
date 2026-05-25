@@ -136,6 +136,10 @@ img {
   display: none;
 }
 
+.hero-text-glass {
+  max-width: 44rem;
+}
+
 @media (max-width: 1023px) {
   body {
     cursor: auto;
@@ -220,6 +224,11 @@ img {
   .home-hero-content p {
     font-size: 0.98rem;
     line-height: 1.65;
+  }
+
+  .hero-text-glass {
+    background: rgba(38, 38, 38, 0.42);
+    padding: 1.15rem;
   }
 
   .home-hero-content .mt-8 {
