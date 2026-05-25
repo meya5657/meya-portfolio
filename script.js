@@ -160,7 +160,8 @@ function showFieldError(field, shouldShow) {
   field.setAttribute("aria-invalid", String(shouldShow));
 }
 
-contactForm?.addEventListener("submit", (event) => {
+contactForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
   const fields = [...contactForm.querySelectorAll("input, textarea")];
   let formIsValid = true;
 
@@ -172,7 +173,6 @@ contactForm?.addEventListener("submit", (event) => {
 
   formStatus.classList.remove("hidden");
   if (!formIsValid) {
-    event.preventDefault();
     formStatus.textContent = "Please review the highlighted fields before sending.";
     formStatus.classList.add("text-red-700");
     fields.find((field) => !field.checkValidity())?.focus();
@@ -181,6 +181,24 @@ contactForm?.addEventListener("submit", (event) => {
 
   formStatus.classList.remove("text-red-700");
   formStatus.textContent = "Sending your message...";
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { Accept: "application/json" }
+    });
+
+    if (!response.ok) {
+      throw new Error("Form service returned an error.");
+    }
+
+    formStatus.textContent = "Thank you. Your message was sent successfully.";
+    contactForm.reset();
+  } catch (error) {
+    formStatus.classList.add("text-red-700");
+    formStatus.textContent = "The message could not be sent yet. Please confirm the FormSubmit activation email or email me directly at meyaajohnson@gmail.com.";
+  }
 });
 
 contactForm?.querySelectorAll("input, textarea").forEach((field) => {
