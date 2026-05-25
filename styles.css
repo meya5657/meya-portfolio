@@ -132,6 +132,10 @@ img {
   visibility: visible;
 }
 
+.mobile-visual-panel {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   body {
     cursor: auto;
@@ -162,6 +166,19 @@ img {
   .main-shell {
     margin-left: 0;
   }
+
+  .home-hero {
+    min-height: 70vh;
+  }
+
+  .home-hero-content {
+    min-height: 70vh;
+    max-width: 42rem;
+  }
+
+  .home-hero-overlay {
+    background: linear-gradient(180deg, rgba(38, 38, 38, 0.28), rgba(55, 7, 72, 0.86));
+  }
 }
 
 @media (max-width: 640px) {
@@ -179,9 +196,48 @@ img {
     box-shadow: 0 14px 38px rgba(38, 38, 38, 0.12);
   }
 
+  .home-hero {
+    min-height: calc(100vh - 6rem);
+    border-radius: 0.75rem;
+  }
+
+  .home-hero-content {
+    min-height: calc(100vh - 6rem);
+    justify-content: flex-end;
+    padding: 2rem 1.25rem 3.75rem;
+  }
+
+  .home-hero-content h1:first-child {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+  }
+
+  .home-hero-content h1:nth-child(2) {
+    font-size: clamp(2.65rem, 15vw, 4.4rem);
+    line-height: 0.95;
+  }
+
+  .home-hero-content p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .home-hero-content .mt-8 {
+    width: 100%;
+  }
+
+  .home-hero-content .mt-8 a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .mobile-visual-panel {
+    display: grid;
+  }
+
   .hero-slide,
   .hero-slide img {
-    min-height: 34rem;
+    min-height: calc(100vh - 6rem);
   }
 
   h1 {
