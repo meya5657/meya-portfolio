@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore selected projects from Meya Johnson's portfolio." />
+  <meta name="author" content="Meya Johnson" />
+  <title>Projects | Meya Johnson's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
+  <header class="fixed inset-x-0 top-0 z-50 flex items-center justify-between border-b border-white/60 bg-[#f2f2f2]/85 px-4 py-3 backdrop-blur-xl lg:hidden"><a href="index.html" class="font-extrabold tracking-tight text-[#262626]">Meya Johnson</a><button id="menuToggle" class="inline-flex h-11 w-11 items-center justify-center rounded border border-[#a5a5a5]/70 bg-white/60 text-[#595959]" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar"><i class="fa-solid fa-bars"></i></button></header>
+  <aside id="sidebar" class="sidebar glass fixed inset-y-0 left-0 z-50 flex flex-col justify-between p-6 lg:translate-x-0" aria-label="Primary navigation"><div><a href="index.html" class="block rounded-lg border border-white/60 bg-white/45 p-4"><span class="block text-sm font-semibold uppercase tracking-[0.18em] text-[#7f7f7f]">Portfolio</span><span class="mt-2 block text-2xl font-extrabold leading-tight text-[#262626]">Meya Johnson</span></a><nav class="mt-8 space-y-2"><a class="nav-link flex items-center gap-3 rounded px-4 py-3 font-semibold text-[#595959]" href="index.html"><i class="fa-solid fa-house w-5"></i> Home</a><a class="nav-link flex items-center gap-3 rounded px-4 py-3 font-semibold text-[#595959]" href="about.html"><i class="fa-solid fa-user w-5"></i> About Me</a><a class="nav-link active flex items-center gap-3 rounded px-4 py-3 font-semibold text-[#595959]" href="projects.html" aria-current="page"><i class="fa-solid fa-layer-group w-5"></i> Projects</a><a class="nav-link flex items-center gap-3 rounded px-4 py-3 font-semibold text-[#595959]" href="resume.html"><i class="fa-solid fa-file-lines w-5"></i> Resume</a><a class="nav-link flex items-center gap-3 rounded px-4 py-3 font-semibold text-[#595959]" href="contact.html"><i class="fa-solid fa-envelope w-5"></i> Contact Me</a></nav></div></aside>
+  <div id="sidebarOverlay" class="fixed inset-0 z-40 hidden bg-black/35 lg:hidden" aria-hidden="true"></div>
+  <main id="main-content" class="main-shell min-h-screen px-4 pb-10 pt-20 sm:px-6 lg:px-10 lg:pt-10">
+    <section class="fade-section">
+      <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#7f7f7f]">Projects</p>
+      <h1 class="mt-3 text-3xl font-extrabold sm:text-5xl">Undergraduate / Program Projects</h1>
+    </section>
+
+    <section class="fade-section mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <article class="glass overflow-hidden rounded-lg">
+        <iframe class="h-64 w-full bg-white" src="photos/hydrowaste-gissig-2026.pdf#toolbar=0&navpanes=0&scrollbar=0" title="Hydrowaste Waterways GIS conference PDF preview"></iframe>
+        <div class="p-6">
+          <span class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">GISSIG Conference · 2026</span>
+          <h2 class="mt-2 text-xl font-bold">Senegal Seaports, Hydro Waste Waterways, Water Stress, Plastic Pollution in Relation to Population Density with Water Reservoirs</h2>
+          <p class="mt-3 leading-7 text-[#595959]">GIS conference research connecting water systems, stress, waste pathways, plastic pollution, population density, and reservoir conditions in Senegal.</p>
+          <a class="mt-5 inline-flex items-center gap-2 rounded bg-[#595959] px-4 py-2 font-bold text-white transition hover:bg-[#404040]" href="photos/hydrowaste-gissig-2026.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> View PDF
+          </a>
+        </div>
+      </article>
+
+      <article class="glass overflow-hidden rounded-lg">
+        <button class="gallery-trigger block w-full" type="button" data-full="photos/project-auria-group.png" aria-label="Open Project Auria photo">
+          <img class="h-64 w-full object-cover transition duration-300 hover:scale-105" src="photos/project-auria-group.png" alt="Project Auria display at Imagine RIT" />
+        </button>
+        <div class="p-6">
+          <span class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">Imagine RIT · 2026</span>
+          <h2 class="mt-2 text-xl font-bold">Project Auria</h2>
+          <p class="mt-3 leading-7 text-[#595959]">Solar powered backpack research and prototype work presented through Imagine RIT, combining portable charging, student needs, and applied engineering design.</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <a class="inline-flex items-center gap-2 rounded bg-[#595959] px-4 py-2 font-bold text-white transition hover:bg-[#404040]" href="photos/project-auria-official-paper.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Official Paper</a>
+            <a class="inline-flex items-center gap-2 rounded border border-[#595959]/40 bg-white/55 px-4 py-2 font-bold text-[#595959] transition hover:bg-white" href="photos/project-auria-research-paper.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Research Paper</a>
+            <a class="inline-flex items-center gap-2 rounded border border-[#595959]/40 bg-white/55 px-4 py-2 font-bold text-[#595959] transition hover:bg-white" href="photos/project-auria-research-poster.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Research Poster</a>
+            <button class="gallery-trigger inline-flex items-center gap-2 rounded border border-[#595959]/40 bg-white/55 px-4 py-2 font-bold text-[#595959] transition hover:bg-white" type="button" data-full="photos/project-auria-backpack.jpeg" aria-label="Open Project Auria backpack photo"><i class="fa-solid fa-image" aria-hidden="true"></i> Backpack Photo</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass overflow-hidden rounded-lg">
+        <button class="gallery-trigger block w-full" type="button" data-full="photos/manatee-project.png" aria-label="Open Manatee Cause of Death project image">
+          <img class="h-64 w-full object-cover transition duration-300 hover:scale-105" src="photos/manatee-project.png" alt="Florida Fish and Wildlife Conservation Commission image for the Manatee project" />
+        </button>
+        <div class="p-6">
+          <span class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">GIS Project · 2025</span>
+          <h2 class="mt-2 text-xl font-bold">Manatee Cause of Death Project</h2>
+          <p class="mt-3 leading-7 text-[#595959]">GIS mapping project exploring manatee mortality patterns and environmental context through spatial data and interactive map analysis.</p>
+          <a class="mt-5 inline-flex items-center gap-2 rounded bg-[#595959] px-4 py-2 font-bold text-white transition hover:bg-[#404040]" href="https://arcg.is/01q8fe0" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Open Manatee Map
+          </a>
+        </div>
+      </article>
+
+      <article class="glass overflow-hidden rounded-lg">
+        <button class="gallery-trigger block w-full" type="button" data-full="photos/disaster-prediction.png" aria-label="Open AI GIS disaster prediction project image">
+          <img class="h-64 w-full object-cover transition duration-300 hover:scale-105" src="photos/disaster-prediction.png" alt="AI GIS disaster prediction and response story map cover" />
+        </button>
+        <div class="p-6">
+          <span class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">GIS Application · Feb 2025-Aug 2025</span>
+          <h2 class="mt-2 text-xl font-bold">AI GIS Disaster Prediction and Response: Manila, Philippines</h2>
+          <p class="mt-3 leading-7 text-[#595959]">A GIS and AI-focused disaster prediction and response project examining spatial risk, response planning, and environmental vulnerability.</p>
+          <a class="mt-5 inline-flex items-center gap-2 rounded bg-[#595959] px-4 py-2 font-bold text-white transition hover:bg-[#404040]" href="https://arcg.is/0arD8i0" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Open ArcGIS
+          </a>
+        </div>
+      </article>
+
+      <article class="glass overflow-hidden rounded-lg">
+        <button class="gallery-trigger block w-full" type="button" data-full="photos/monitoring-pollution.jpg" aria-label="Open marine robotics symposium poster">
+          <img class="h-64 w-full object-cover transition duration-300 hover:scale-105" src="photos/monitoring-pollution.jpg" alt="Monitoring pollution marine robotics symposium poster" />
+        </button>
+        <div class="p-6">
+          <span class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">Navy Academy Marine Robotics Symposium · 2025</span>
+          <h2 class="mt-2 text-xl font-bold">Monitoring Pollution, Neutralizing pH, and Protecting the Sea</h2>
+          <p class="mt-3 leading-7 text-[#595959]">Marine robotics project focused on water quality monitoring, pH neutralization, and ocean protection through applied STEM research.</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <a class="inline-flex items-center gap-2 rounded border border-[#595959]/40 bg-white/55 px-4 py-2 font-bold text-[#595959] transition hover:bg-white" href="https://drive.google.com/file/d/1P9pYEyolzXw0feybQQQiCB0YJH_OJAie/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-google-drive" aria-hidden="true"></i> Page 1
+            </a>
+            <a class="inline-flex items-center gap-2 rounded border border-[#595959]/40 bg-white/55 px-4 py-2 font-bold text-[#595959] transition hover:bg-white" href="https://drive.google.com/file/d/12zLkuD_QnJHlAxGE1WYhJRVKyUgiO3fe/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-google-drive" aria-hidden="true"></i> Page 2
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass overflow-hidden rounded-lg">
+        <button class="gallery-trigger block w-full" type="button" data-full="photos/hierarchical-robotics.jpg" aria-label="Open hierarchical robotics poster">
+          <img class="h-64 w-full object-cover transition duration-300 hover:scale-105" src="photos/hierarchical-robotics.jpg" alt="Hierarchical robotic networks poster" />
+        </button>
+        <div class="p-6">
+          <span class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">Robofest LTU · 2024</span>
+          <h2 class="mt-2 text-xl font-bold">Hierarchical Robotic Networks: Decoding the Dynamics</h2>
+          <p class="mt-3 leading-7 text-[#595959]">Robotics research exploring MINDSTORMS NXT, MBOT, and V5 VEX autonomous systems through measurements, simulation, and comparative analysis.</p>
+          <a class="mt-5 inline-flex items-center gap-2 rounded bg-[#595959] px-4 py-2 font-bold text-white transition hover:bg-[#404040]" href="https://drive.google.com/file/d/1LdJO7kThTUq19sPYaWrx3Y1maLP-RPdX/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-google-drive" aria-hidden="true"></i> View Robotics File
+          </a>
+        </div>
+      </article>
+    </section>
+    <footer class="fade-section mt-10 rounded-lg border border-white/60 bg-[#262626]/90 p-7 text-[#f2f2f2] shadow-2xl sm:p-9"><div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4"><div><h2 class="text-xl font-extrabold">Meya Johnson</h2><p class="mt-3 leading-7 text-[#dedede]">"I want to discourage you from choosing anything or making any decision simply because it is safe. Things of value seldom are." ~ Toni Morrison</p></div><div><h3 class="font-bold">Links</h3><ul class="mt-3 space-y-2 text-[#dedede]"><li><a href="about.html">About Me</a></li><li><a href="projects.html">Projects</a></li><li><a href="resume.html">Resume</a></li><li><a href="contact.html">Contact Me</a></li></ul></div><div><h3 class="font-bold">Contact</h3><ul class="mt-3 space-y-2 text-[#dedede]"><li>maj5657@rit.edu</li><li>meyaajohnson@gmail.com</li><li>+1 (346)-530-5852</li><li>Rochester, New York</li><li>Houston, Texas</li></ul></div><div><h3 class="font-bold">Social</h3><div class="mt-4 flex gap-3"><a class="inline-flex h-10 w-10 items-center justify-center rounded bg-white/10 transition hover:bg-white/20" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a class="inline-flex h-10 w-10 items-center justify-center rounded bg-white/10 transition hover:bg-white/20" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div></div><div class="mt-8 border-t border-white/15 pt-5 text-sm text-[#dedede]">&copy; <span id="year"></span> Meya Johnson. All rights reserved.</div></footer>
+  </main>
+  <div id="lightbox" class="lightbox fixed inset-0 z-[9999] flex items-center justify-center bg-[#262626]/85 p-4" role="dialog" aria-modal="true" aria-label="Project image preview"><button id="lightboxClose" class="absolute right-5 top-5 inline-flex h-12 w-12 items-center justify-center rounded bg-white text-[#595959]" type="button" aria-label="Close image preview"><i class="fa-solid fa-xmark"></i></button><img id="lightboxImage" class="max-h-[86vh] rounded-lg border border-white/30 object-contain shadow-2xl" src="" alt="" /></div>
+  <button id="backToTop" class="fixed bottom-5 right-5 z-40 hidden h-12 w-12 items-center justify-center rounded bg-[#595959] text-white shadow-xl" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
