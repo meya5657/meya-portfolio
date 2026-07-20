@@ -102,6 +102,69 @@
       </div>
     </section>
 
+    <section class="fade-section py-12" aria-labelledby="updates-heading">
+      <div class="glass rounded-lg p-5 sm:p-7">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-[#7f7f7f]">Latest Updates</p>
+            <h2 id="updates-heading" class="mt-2 text-2xl font-extrabold sm:text-3xl">What I am working on now</h2>
+          </div>
+          <div class="flex gap-2" aria-label="Update slideshow controls">
+            <button id="updatesPrev" class="inline-flex h-11 w-11 items-center justify-center rounded border border-white/70 bg-white/55 text-[#595959] transition hover:-translate-y-0.5 hover:bg-white" type="button" aria-label="Previous update">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button id="updatesNext" class="inline-flex h-11 w-11 items-center justify-center rounded border border-white/70 bg-white/55 text-[#595959] transition hover:-translate-y-0.5 hover:bg-white" type="button" aria-label="Next update">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="updatesSlideshow" class="updates-slideshow relative mt-6 overflow-hidden rounded-lg border border-white/70 bg-white/45" aria-live="polite">
+          <article class="update-slide active grid gap-6 p-5 sm:grid-cols-[1.05fr_1.4fr] sm:p-6" data-update-slide>
+            <img class="h-64 w-full rounded object-cover sm:h-full" src="photos/project-auria-group.png" alt="Project Auria team display at Imagine RIT" />
+            <div class="flex flex-col justify-center">
+              <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">2026 Research</p>
+              <h3 class="mt-2 text-2xl font-extrabold text-[#262626]">Project Auria at Imagine RIT</h3>
+              <p class="mt-4 leading-7 text-[#595959]">Continuing work on a solar-powered backpack concept focused on practical, student-centered energy access and presentation-ready research communication.</p>
+              <a class="mt-5 inline-flex w-fit items-center gap-2 rounded bg-[#370748] px-4 py-2.5 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#4f0a67]" href="projects.html">
+                View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="update-slide grid gap-6 p-5 sm:grid-cols-[1.05fr_1.4fr] sm:p-6" data-update-slide>
+            <img class="h-64 w-full rounded object-cover sm:h-full" src="photos/disaster-prediction.png" alt="AI GIS disaster prediction story map title slide" />
+            <div class="flex flex-col justify-center">
+              <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">GIS Portfolio</p>
+              <h3 class="mt-2 text-2xl font-extrabold text-[#262626]">AI GIS Disaster Prediction and Response</h3>
+              <p class="mt-4 leading-7 text-[#595959]">Developing geospatial storytelling around disaster prediction and response in Manila, Philippines, with emphasis on environmental risk and community impact.</p>
+              <a class="mt-5 inline-flex w-fit items-center gap-2 rounded bg-[#370748] px-4 py-2.5 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#4f0a67]" href="projects.html">
+                View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="update-slide grid gap-6 p-5 sm:grid-cols-[1.05fr_1.4fr] sm:p-6" data-update-slide>
+            <img class="h-64 w-full rounded object-cover sm:h-full" src="photos/social-preview.jpg" alt="Meya Johnson portfolio collage with academic and research logos" />
+            <div class="flex flex-col justify-center">
+              <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#7f7f7f]">Leadership Update</p>
+              <h3 class="mt-2 text-2xl font-extrabold text-[#262626]">$5.16M+ Scholarship Resource Database</h3>
+              <p class="mt-4 leading-7 text-[#595959]">Built a scholarship and grant database to improve student access to academic funding, including thousands of opportunities across major fields of study.</p>
+              <a class="mt-5 inline-flex w-fit items-center gap-2 rounded bg-[#370748] px-4 py-2.5 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#4f0a67]" href="about.html">
+                Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-5 flex justify-center gap-2" aria-label="Choose update slide">
+          <button class="update-dot h-2.5 w-8 rounded-full bg-[#370748]" type="button" aria-label="Show update 1" data-update-control="0"></button>
+          <button class="update-dot h-2.5 w-2.5 rounded-full bg-[#7f7f7f]/45" type="button" aria-label="Show update 2" data-update-control="1"></button>
+          <button class="update-dot h-2.5 w-2.5 rounded-full bg-[#7f7f7f]/45" type="button" aria-label="Show update 3" data-update-control="2"></button>
+        </div>
+      </div>
+    </section>
+
     <section class="fade-section py-12">
       <div class="grid gap-5 md:grid-cols-1">
 

@@ -55,6 +55,57 @@ if (slides.length) {
   setInterval(() => showSlide(activeSlide + 1), 5200);
 }
 
+// Homepage updates slideshow rotates current work without changing the hero.
+const updateSlides = [...document.querySelectorAll("[data-update-slide]")];
+const updateDots = [...document.querySelectorAll("[data-update-control]")];
+const updatesSlideshow = document.getElementById("updatesSlideshow");
+const updatesPrev = document.getElementById("updatesPrev");
+const updatesNext = document.getElementById("updatesNext");
+let activeUpdate = 0;
+let updatesTimer = null;
+
+function showUpdate(index) {
+  if (!updateSlides.length) return;
+  activeUpdate = (index + updateSlides.length) % updateSlides.length;
+  updateSlides.forEach((slide, slideIndex) => slide.classList.toggle("active", slideIndex === activeUpdate));
+  updateDots.forEach((dot, dotIndex) => {
+    dot.className = dotIndex === activeUpdate
+      ? "update-dot h-2.5 w-8 rounded-full bg-[#370748]"
+      : "update-dot h-2.5 w-2.5 rounded-full bg-[#7f7f7f]/45";
+  });
+}
+
+function startUpdatesTimer() {
+  if (!updateSlides.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  updatesTimer = setInterval(() => showUpdate(activeUpdate + 1), 6800);
+}
+
+function restartUpdatesTimer() {
+  clearInterval(updatesTimer);
+  startUpdatesTimer();
+}
+
+updateDots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    showUpdate(Number(dot.dataset.updateControl));
+    restartUpdatesTimer();
+  });
+});
+
+updatesPrev?.addEventListener("click", () => {
+  showUpdate(activeUpdate - 1);
+  restartUpdatesTimer();
+});
+
+updatesNext?.addEventListener("click", () => {
+  showUpdate(activeUpdate + 1);
+  restartUpdatesTimer();
+});
+
+updatesSlideshow?.addEventListener("mouseenter", () => clearInterval(updatesTimer));
+updatesSlideshow?.addEventListener("mouseleave", startUpdatesTimer);
+startUpdatesTimer();
+
 // IntersectionObserver powers subtle fade-in sections without changing layout.
 const fadeSections = [...document.querySelectorAll(".fade-section")];
 const observer = "IntersectionObserver" in window
