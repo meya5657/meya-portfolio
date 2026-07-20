@@ -141,12 +141,12 @@ img {
 }
 
 .updates-slideshow {
-  min-height: 28rem;
+  min-height: 18rem;
 }
 
 .update-slide {
   display: none;
-  min-height: 28rem;
+  min-height: 18rem;
   opacity: 0;
   transform: translateX(1.25rem);
 }
@@ -239,12 +239,7 @@ img {
     padding: 2rem 1.25rem 3.75rem;
   }
 
-  .home-hero-content h1:first-child {
-    font-size: 0.7rem;
-    letter-spacing: 0.16em;
-  }
-
-  .home-hero-content h1:nth-child(2) {
+  .home-hero-content .hero-name {
     font-size: clamp(2.65rem, 15vw, 4.4rem);
     line-height: 0.95;
   }
