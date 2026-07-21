@@ -140,13 +140,8 @@ img {
   max-width: 44rem;
 }
 
-.updates-slideshow {
-  min-height: 18rem;
-}
-
 .update-slide {
   display: none;
-  min-height: 18rem;
   opacity: 0;
   transform: translateX(1.25rem);
 }
@@ -270,11 +265,6 @@ img {
   .hero-slide,
   .hero-slide img {
     min-height: calc(100vh - 6rem);
-  }
-
-  .updates-slideshow,
-  .update-slide {
-    min-height: auto;
   }
 
   h1 {
