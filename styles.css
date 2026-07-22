@@ -132,10 +132,6 @@ img {
   visibility: visible;
 }
 
-.mobile-visual-panel {
-  display: none;
-}
-
 .hero-text-glass {
   max-width: 44rem;
 }
@@ -256,10 +252,6 @@ img {
   .home-hero-content .mt-8 a {
     flex: 1 1 100%;
     text-align: center;
-  }
-
-  .mobile-visual-panel {
-    display: grid;
   }
 
   .hero-slide,
