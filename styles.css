@@ -141,13 +141,13 @@ img {
 }
 
 .update-slide {
-  display: none;
+  display: none !important;
   opacity: 0;
   transform: translateX(1.25rem);
 }
 
 .update-slide.active {
-  display: grid;
+  display: grid !important;
   animation: updateSlideIn 480ms ease both;
 }
 
